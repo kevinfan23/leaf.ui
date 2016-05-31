@@ -11,7 +11,7 @@
 
 <h2 id="css3-and-html5-button-animations">UI/UX Designs</h2>
 
-<p>All code was written and optimized in HTML5 and CSS3. Designed in Sketch&copy; 3</p>
+<p>All code was written and optimized in HTML5 and CSS3. Designed in Sketch 3</p>
 
 <blockquote>
   <p><strong>Features Included:</strong></p>
