@@ -59,6 +59,14 @@ Small Window Size and Mobile Style
 			margin: 5px 5px !important;
 		}
 	}	
+	
+	h4 {
+		font-size: 40px !important;
+	}
+	
+	.next-collection {
+		font-size: 13px !important;
+	}
 }
 
 /* -------------------------------- 
@@ -105,15 +113,12 @@ p.intro-des {
 	}
 }
 
-.button-row-container {
-	width: 200px;
-	height: 50px;
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
+.next-collection {
+	font-size: 15px;
+	
+	a {
+		color: $dark-gray;
+	}
 }
 
 /*** Navbar ***/
