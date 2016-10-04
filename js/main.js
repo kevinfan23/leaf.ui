@@ -23,5 +23,22 @@ $(document).ready(function() {
 				$('.logo').css('color', '#000');		
 			}
 		});
+		
+	/*** Connect page effects ***/
+	$('#connect').on('click', function() {
+		$('.connect-overlay').height($(window).height());
+		$('.connect-overlay').toggleClass('connected-overlay');
+		$('.connect-container').toggleClass('connected-container');
+		$('li.connect-item').toggleClass('fadeInDownSwing');
+		$('.connect-container').toggleClass('fixed-page');
+		$('#connect').toggleClass('connected');
+		$('.connect-overlay').on('click', function() {
+			$('.connect-overlay').removeClass('connected-overlay');
+			$('.connect-container').removeClass('connected-container')
+			$('li.connect-item').removeClass('fadeInDownSwing');
+			$('.connect-container').removeClass('fixed-page');
+			$('#connect').removeClass('connected');
+		});
+	});
 });
 		

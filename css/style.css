@@ -2,10 +2,64 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i);
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700);
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fontsicomoon.eot?ndcih3");
+  src: url("../fonts/icomoon.eot?ndcih3#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ndcih3") format("truetype"), url("../fonts/icomoon.woff?ndcih3") format("woff"), url("../fonts/icomoon.svg?ndcih3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="fa-"], [class*=" fa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-codepen:before {
+  content: "\e900"; }
+
+.fa-dribbble:before {
+  content: "\e901"; }
+
+.fa-linkedin:before {
+  content: "\e902"; }
+
+.fa-envelope-o:before {
+  content: "\e903"; }
+
+.fa-github:before {
+  content: "\e904"; }
+
+.fa-medium:before {
+  content: "\e905"; }
+
+@font-face {
+  font-family: "Futura Book";
+  src: url("../fonts/Futura-Book.ttf"), url("../fonts/Futura-Book.eot");
+  /* IE */ }
+
 /*** Variables ***/
 /* -------------------------------- 
 Small Window Size and Mobile Style
 -------------------------------- */
+@media screen and (max-width: 450px) {
+  .connect-container {
+    top: 150px !important;
+    width: 230px !important; }
+    .connect-container li.connect-item a {
+      font-size: 15px !important;
+      letter-spacing: 2px; }
+    .connect-container li.connect-item p.connect-info {
+      padding: 10px 0 10px 40px !important;
+      font-size: 12px !important; } }
+
 /* -------------------------------- 
 		General Style
 -------------------------------- */
@@ -238,6 +292,70 @@ span.logo {
     color: #fff; }
 
 /* -------------------------------- 
+		Contact Overlay
+-------------------------------- */
+.connect-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  opacity: 0;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: auto;
+  background-attachment: fixed;
+  transition: .5s ease; }
+
+.connected-overlay {
+  z-index: 20 !important;
+  opacity: 1 !important; }
+
+.connect-container {
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+  top: 200px;
+  z-index: -1; }
+  .connect-container li.connect-item {
+    animation-duration: .2s;
+    opacity: 0; }
+    .connect-container li.connect-item:hover .connect-link {
+      color: #9b9b9b; }
+    .connect-container li.connect-item:nth-of-type(1) {
+      animation-delay: 50ms; }
+    .connect-container li.connect-item:nth-of-type(2) {
+      animation-delay: 100ms; }
+    .connect-container li.connect-item:nth-of-type(3) {
+      animation-delay: 150ms; }
+    .connect-container li.connect-item:nth-of-type(4) {
+      animation-delay: 200ms; }
+    .connect-container li.connect-item:nth-of-type(5) {
+      animation-delay: 250ms; }
+    .connect-container li.connect-item:nth-of-type(6) {
+      animation-delay: 300ms; }
+    .connect-container li.connect-item a {
+      color: #f7f7f7;
+      font-family: "Futura Book";
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 2px; }
+    .connect-container li.connect-item p.connect-info {
+      display: inline-block;
+      padding: 10px 0 10px 70px;
+      font-size: 15px; }
+
+.connected-container {
+  z-index: 999 !important; }
+
+.fixed-page {
+  position: fixed; }
+
+/* -------------------------------- 
 		Custom Animations
 -------------------------------- */
 .fadeInDown {
@@ -270,6 +388,40 @@ span.logo {
   0% {
     opacity: 0;
     transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.fadeInDownSwing {
+  -moz-animation-name: fadeInDownSwing;
+  -webkit-animation-name: fadeInDownSwing;
+  animation-name: fadeInDownSwing;
+  animation-fill-mode: both; }
+
+@-moz-keyframes fadeInDownSwing {
+  0% {
+    opacity: 0;
+    -moz-transform: translate3d(-5%, -100%, 0);
+    transform: translate3d(-5%, -100%, 0); }
+  to {
+    opacity: 1;
+    -moz-transform: none;
+    transform: none; } }
+
+@-webkit-keyframes fadeInDownSwing {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-5%, -100%, 0);
+    transform: translate3d(-5%, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInDownSwing {
+  0% {
+    opacity: 0;
+    transform: translate3d(-5%, -100%, 0); }
   to {
     opacity: 1;
     transform: none; } }
