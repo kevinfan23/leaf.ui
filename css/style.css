@@ -40,6 +40,11 @@
 .fa-medium:before {
   content: "\e905"; }
 
+@font-face {
+  font-family: "Futura Book";
+  src: url("../fonts/Futura-Book.ttf"), url("../fonts/Futura-Book.eot");
+  /* IE */ }
+
 /*** Variables ***/
 /* -------------------------------- 
 Small Window Size and Mobile Style
@@ -78,7 +83,7 @@ Small Window Size and Mobile Style
 @media screen and (max-width: 450px) {
   .connect-container {
     top: 150px !important;
-    width: 230px !important; }
+    width: 250px !important; }
     .connect-container li.connect-item a {
       font-size: 15px !important;
       letter-spacing: 2px; }
@@ -443,7 +448,7 @@ img {
       animation-delay: 300ms; }
     .connect-container li.connect-item a {
       color: #f7f7f7;
-      font-family: "Poppins", sans-serif;
+      font-family: "Futura Book";
       font-weight: 400;
       text-decoration: none;
       font-size: 20px;

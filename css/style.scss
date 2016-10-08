@@ -5,6 +5,12 @@
 
 @import 'fonts';
 
+@font-face{
+    font-family: "Futura Book";
+    src: url('../fonts/Futura-Book.ttf'),
+    url('../fonts/Futura-Book.eot'); /* IE */
+}
+
 /*** Variables ***/
 $Lato:	'Lato', sans-serif;
 $Open-sans:	'Open Sans', sans-serif;
@@ -83,7 +89,7 @@ Small Window Size and Mobile Style
 	
 	.connect-container {
 		top: 150px !important;
-		width: 230px !important;
+		width: 250px !important;
 		
 		li.connect-item {
 			
@@ -567,7 +573,7 @@ img {
 		
 		a {
 			color: #f7f7f7;
-			font-family: $Poppins;	
+			font-family: "Futura Book";	
 			font-weight: 400;
 			text-decoration: none;
 			font-size: 20px;
