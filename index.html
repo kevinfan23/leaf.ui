@@ -29,58 +29,63 @@
 	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/zoom.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Leaf.ui</title>
-</head>
-<body>
-
-<!-- kfan.io Logo -->
-<div class="block-logo kfan-logo">
-	<a class="home-top" href="http://kfan.io"><span class="logo">kf<span class="collapse"><i>a</i><i>n</i></span><i id="dot">.</i></span></a>
-</div>
-
-<!-- Mobile Menu Logo -->
-<div class="block-logo menu-logo">
-	<a class="menu-icon" href="#"><span class="logo" id="menu-span">menu.</span></a>
-</div>
+	<style>
+		.footer p {
+				color: rgba(74, 213, 165, 1);
+		}
+		.footer div {
+				background: rgba(74, 213, 165, .3);
+		}
+		.footer:hover .footer-container {
+			background: rgba(74, 213, 165, .8);
+		}
 		
-<!-- Side Navbar -->
-<nav class="sidenavbar-container">
-	<ul class="sidenav navbar">
-		<li class="sidenav-item sidenav-heading"><a href="#section1" data-number="1" class="sidenav-heading-link">Leaf.ui</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section2" data-number="2">000. Motivation</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section3" data-number="3">001. Shopping Card</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section4" data-number="4">002. Messenger Opinion</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section5" data-number="5">003. Redesign</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section6" data-number="6">004. Pokédex</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section7" data-number="7">005. LA LA</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section8" data-number="8">006. Mt. Fuji</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section9" data-number="9">007. Fitness Icons</a></li>		
-		<li class="sidenav-item"><a class="sidenav-link" href="#section10" data-number="10">008. Name Card</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section11" data-number="11">009. iOS 10</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section12" data-number="12">010. Keynote Theme</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section13" data-number="13">011. Hiragana/Katakana Chart</a></li>
-		<li class="sidenav-item"><a class="sidenav-link" href="#section14" data-number="14">012. kfan.io Rebrand</a></li>
-	</ul>
-</nav>
+	</style>
+	
+</head>
+<body class="light leaf.ui">
 
 <div class="page-container">
+		
+	<div class="block-logo kfan-logo light">
+		<a class="home-top" href="index.html"><span class="logo">kfan<i id="dot">.</i></span></a>
+	</div>
+	
+	<!-- Mobile Menu Logo -->
+	<div class="block-logo menu-logo light">
+		<a class="menu-icon" href="#"><span class="logo" id="menu-span">menu.</span></a>
+	</div>
+			
+	<!-- Navbar -->
+	<nav class="navbar-container">
+		<ul class="nav navbar">
+			<li class="nav-item connect dark"><a href="#">CONNECT</a></li>
+		</ul>
+	</nav>
+	
+	<nav class="nav-arrow about-me">
+		<a href="http://kfan.io"><img class="nav-icon" src="img/backtoworks.png"/></a>
+	</nav>
 	
 	<!-- Menu Overlay -->
 	<div class="menu-container">
 		<ul class="menu-list">
 			<li class="menu-item">
-				<a href="http://kfan.io/project">Project</a>	
+				<a href="index.html">Project</a>	
 			</li>
 			<li class="menu-item">
 				<a href="http://kfan.io/about">About</a>	
 			</li>
 			<li class="menu-item">
-				<a href="#" id="connect">Connect</a>	
+				<a href="#" class="connect">Connect</a>	
 			</li>
 		</ul>
 	</div>
-	
+
+	<!-- Connect Overlay -->
 	<div class="connect-overlay"></div>
 
 	<nav class="connect-container">
@@ -122,136 +127,134 @@
 				</a>
 			</li>	
 		</ul>
-	</nav>
-	
+	</nav>	
 
 	
 	<!-- Header Page -->
-	<div class="header" id="section1">
-		<h4 class="">Leaf.ui</h4>
-	</div>
+	<div class="header" id="section1" style="background-image: url('img/bg1-min.jpeg')">
+		<h2 class="title light">Leaf.io</h2>
+	</div>	
 	
 	<!-- Intro Page -->
-	<div class="image-container intro" id="section2">
+	<div class="section-container intro" id="section2">
 		<p>
 			Leaf.ui:
 			<span>Created by constantly asking myself: <br>What can I improve to make our daily lives better?</span></br>
 		</p>
-		<img src="img/leaf.ui-cover.gif"/>
 	</div>
 		
 		
 	<!-- Image Pages -->
-	<div class="image-container" id="section3">
+	<div class="section-container" id="section3">
 		<p>
 			<span class="section-index">001</span></br>
 			<span>Question.</span></br>
 			What if shopping pages are not boring?
 		</p>
-		<img src="img/leaf.ui-001.jpg"/>
+		<img src="img/leaf.ui-001-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container" id="section4">
+	<div class="section-container" id="section4">
 		<p>
 			<span class="section-index">002</span></br>
 			<span>Thinking.</span></br>
 			How to express ourselves, anonymously?
 		</p>		
-		<img src="img/leaf.ui-002.jpg"/>
+		<img src="img/leaf.ui-002-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container wide" id="section5">
+	<div class="section-container" id="section5">
 		<p>
 			<span class="section-index">003</span></br>
 			<span>Redesign.</span></br>
 			How to redefine a classic concept? The original site can be found <a href="https://www.vitsoe.com/us/about/good-design" target="_blank">here</a> and <a href="https://https://www.amazon.com/dp/B00DBYBNEE?_encoding=UTF8&*Version*=1&*entries*=0" target="_blank">here.</a>
 		</p>	
-		<img src="img/leaf.ui-003.jpg"/>
+		<img src="img/leaf.ui-003-min.jpg" data-action="zoom"/>
 	</div>
 		
-	<div class="image-container wide">		
-		<img src="img/leaf.ui-004.jpg"/>
+	<div class="section-container">		
+		<img src="img/leaf.ui-004-min.jpg" data-action="zoom"/>
 	</div>
 		
-	<div class="image-container" id="section6">
+	<div class="section-container" id="section6">
 		<p>
 			<span class="section-index">004</span></br>
 			<span>Wiki.</span></br>
 			How can information pages be intuitive and sexy?
 		</p>		
-		<img src="img/leaf.ui-005.jpg"/>
+		<img src="img/leaf.ui-005-min.jpg" data-action="zoom"/>
 	</div>
 		
-	<div class="image-container" id="section7">
+	<div class="section-container" id="section7">
 		<p>
 			<span class="section-index">005</span></br>
 			<span>Illustration.</span></br>
 			How to frame a city in a single icon?
 		</p>		
-		<img src="img/leaf.ui-006.jpg"/>
+		<img src="img/leaf.ui-006-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container" id="section8">
+	<div class="section-container" id="section8">
 		<p>
 			<span class="section-index">006</span></br>
 			<span>Mt. Fuji.</span></br>
 			What color is Mt. Fuji?
 		</p>		
-		<img src="img/leaf.ui-007.jpg"/>
+		<img src="img/leaf.ui-007-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container" id="section9">
+	<div class="section-container" id="section9">
 		<p>
 			<span class="section-index">007</span></br>
 			<span>App Icons.</span></br>
 			How to capture fitness in an icon set?
 		</p>		
-		<img src="img/leaf.ui-008.jpg"/>
+		<img src="img/leaf.ui-008-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container" id="section10">
+	<div class="section-container" id="section10">
 		<p>
 			<span class="section-index">008</span></br>
 			<span>Name Card.</span></br>
 			How to make name cards attract you to the contents?
 		</p>		
-		<img src="img/leaf.ui-009.jpg"/>
+		<img src="img/leaf.ui-009-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container" id="section11">
+	<div class="section-container" id="section11">
 		<p>
 			<span class="section-index">009</span></br>
 			<span>Display.</span></br>
 			What if displays can tell stories?
 		</p>		
-		<img src="img/leaf.ui-010.jpg"/>
+		<img src="img/leaf.ui-010-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container" id="section12">
+	<div class="section-container" id="section12">
 		<p>
 			<span class="section-index">010</span></br>
 			<span>Keynote.</span></br>
 			How to make keynote backgrounds not boring while still focusing on the contents.
 		</p>		
-		<img src="img/leaf.ui-011.jpg"/>
+		<img src="img/leaf.ui-011-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container" id="section13">
+	<div class="section-container" id="section13">
 		<p>
 			<span class="section-index">011</span></br>
 			<span>Language Learning.</span></br>
 			How to make the process of looking up characters a breeze for beginners.
 		</p>		
-		<img src="img/leaf.ui-012.jpg"/>
+		<img src="img/leaf.ui-012-min.jpg" data-action="zoom"/>
 	</div>
 	
-	<div class="image-container" id="section14">
+	<div class="section-container" id="section14">
 		<p>
 			<span class="section-index">012</span></br>
 			<span>Personal Website.</span></br>
 			How to express myself, more concisely.
 		</p>		
-		<img src="img/leaf.ui-013.jpg"/>
+		<img src="img/leaf.ui-013-min.jpg" data-action="zoom"/>
 	</div>
 	
 	<!-- Footer Page -->
@@ -264,6 +267,9 @@
 	
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/pace.js"></script>
-<script src="js/main.js"></script>
+<script src="js/transition.min.js"></script>
+<script src="js/zoom.min.js"></script>
+<script src="js/logo-connect.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html
