@@ -117,6 +117,14 @@ Small Window Size and Mobile Style
 		display: none !important;
 	}
 	
+	.menu-item {
+		height: 100px !important;
+		
+		a {
+			font-size: 50px !important;
+		}
+	}
+	
 }
 
 @media screen and (max-width: 550px) {
@@ -178,8 +186,12 @@ Small Window Size and Mobile Style
 		padding-left: 15px !important;
 	}
 	
-	.menu-item a {
-		font-size: 50px !important;
+	.menu-item {
+		height: 90px !important;
+		
+		a {
+			font-size: 45px !important;
+		}
 	}
 }
 

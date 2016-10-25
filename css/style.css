@@ -93,7 +93,11 @@ Small Window Size and Mobile Style
   .navbar-container {
     display: none !important; }
   .nav, .navbar {
-    display: none !important; } }
+    display: none !important; }
+  .menu-item {
+    height: 100px !important; }
+    .menu-item a {
+      font-size: 50px !important; } }
 
 @media screen and (max-width: 550px) {
   .header h2 {
@@ -126,8 +130,10 @@ Small Window Size and Mobile Style
     font-size: 40px !important; }
   .block-logo {
     padding-left: 15px !important; }
-  .menu-item a {
-    font-size: 50px !important; } }
+  .menu-item {
+    height: 90px !important; }
+    .menu-item a {
+      font-size: 45px !important; } }
 
 /* -------------------------------- 
 		Project Showcase
