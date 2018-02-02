@@ -12,20 +12,6 @@
 
 <p>All code was written and optimized in HTML5 and CSS3. Designed in Sketch 3</p>
 
-<blockquote>
-  <p><strong>Features Included:</strong></p>
-
-  <ul>
-  <li>Button Border Animations</li>
-  <li>Pulse</li>
-  <li>Draw and Fill Animations</li>
-  <li>Responsive Chart Animation</li>
-  <li>Apple Watch Sun Rise/Set Remake</li>
-  </ul>
-</blockquote>
-
-
-
 <h4 id="installation"><i class="icon-file"></i> Installation</h4>
 
 <p>Simply copy/paste all the code and customize it.</p>
